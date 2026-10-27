@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    name="theme-color"
+    content="#090a10"
+  >
+  <meta
+    name="description"
+    content="wanuhcoded. — The creative developer portfolio of Mariawanuh, an IT student exploring the space between creativity and technology."
+  >
+
+  <title>wanuhcoded. | Creative Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body data-theme="dark">
+
+  <!-- BACKGROUND EFFECTS -->
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="scroll-progress" id="progressBar" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <a href="#home" class="logo" aria-label="wanuhcoded home">
+        wanuhcoded<span>.</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <a
+          href="https://github.com/mariawana"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="nav-github"
+        >
+          GitHub ↗
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          id="commandTrigger"
+          class="command-trigger"
+          aria-label="Open quick navigation"
+          title="Quick navigation"
+        >
+          <span>⌘</span>
+          <span>K</span>
+        </button>
+
+        <button
+          type="button"
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Switch theme"
+          title="Toggle dark or light mode"
+        >
+          ☀
+        </button>
+
+        <button
+          type="button"
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          ☰
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="eyebrow reveal">
+            <span class="status-dot"></span>
+            OPEN TO LEARNING &amp; COLLABORATION
+          </div>
+
+          <p class="hero-kicker reveal">
+            CREATIVE MIND. DEVELOPER IN PROGRESS.
+          </p>
+
+          <h1 class="hero-title reveal">
+            Where ideas
+            <span class="gradient-text">meet imagination.</span>
+          </h1>
+
+          <p class="hero-description reveal">
+            Hey, I'm <strong>Mariella Arao.</strong> An IT student exploring the space between creativity and technology. I turn curiosity into projects, one line of code at a time.
+          </p>
+
+          <div class="hero-buttons reveal">
+            <a href="#projects" class="btn primary">
+              Explore my work <span>↗</span>
+            </a>
+
+            <a href="#contact" class="btn secondary">
+              Let's connect <span>↗</span>
+            </a>
+          </div>
+
+          <div class="hero-bottom reveal">
+            <span>SCROLL TO EXPLORE</span>
+            <span class="scroll-arrow">↓</span>
+          </div>
+
+        </div>
+
+        <div class="hero-art reveal" aria-label="Decorative code editor illustration">
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="floating-tag tag-one">
+            &lt;creative /&gt;
+          </div>
+
+          <div class="floating-tag tag-two">
+            { curiosity: true }
+          </div>
+
+          <div class="code-window">
+
+            <div class="code-window-top">
+              <div class="window-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <span>mariawanuh.js</span>
+              <span>✦</span>
+            </div>
+
+            <div class="code-window-body">
+              <div><span class="line-number">01</span> <span class="code-purple">const</span> developer = {</div>
+              <div><span class="line-number">02</span> &nbsp; name: <span class="code-green">'Mariawanuh'</span>,</div>
+              <div><span class="line-number">03</span> &nbsp; role: <span class="code-green">'IT Student'</span>,</div>
+              <div><span class="line-number">04</span> &nbsp; passion: [</div>
+              <div><span class="line-number">05</span> &nbsp;&nbsp; <span class="code-green">'design'</span>,</div>
+              <div><span class="line-number">06</span> &nbsp;&nbsp; <span class="code-green">'development'</span>,</div>
+              <div><span class="line-number">07</span> &nbsp;&nbsp; <span class="code-green">'creativity'</span></div>
+              <div><span class="line-number">08</span> &nbsp; ],</div>
+              <div><span class="line-number">09</span> &nbsp; learning: <span class="code-purple">true</span>,</div>
+              <div><span class="line-number">10</span> &nbsp; givingUp: <span class="code-purple">false</span></div>
+              <div><span class="line-number">11</span> };</div>
+              <div><span class="line-number">12</span></div>
+              <div><span class="line-number">13</span> <span class="code-comment">// keep building ✦</span></div>
+            </div>
+
+            <div class="code-window-footer">
+              <span>● JavaScript</span>
+              <span>UTF-8</span>
+              <span>Ln 13, Col 18</span>
+            </div>
+
+          </div>
+
+          <div class="floating-spark spark-one">✦</div>
+          <div class="floating-spark spark-two">✧</div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>CREATIVE DEVELOPMENT ✦</span>
+        <span>DESIGN THINKING ✦</span>
+        <span>CODE &amp; CURIOSITY ✦</span>
+        <span>BUILDING IDEAS ✦</span>
+        <span>CREATIVE DEVELOPMENT ✦</span>
+        <span>DESIGN THINKING ✦</span>
+        <span>CODE &amp; CURIOSITY ✦</span>
+        <span>BUILDING IDEAS ✦</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <section class="section about-section" id="about">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="section-label">
+            <span>01 / ABOUT ME</span>
+          </div>
+
+          <h2>
+            More than just
+            <span class="gradient-text">lines of code.</span>
+          </h2>
+
+          <p>
+            A little introduction to the person behind the screen.
+          </p>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-visual reveal">
+            <div class="about-art">
+              <div class="about-art-inner">
+                <span class="about-symbol">&lt;/&gt;</span>
+                <span class="about-art-caption">ALWAYS LEARNING.</span>
+              </div>
+              <span class="about-corner corner-one">+</span>
+              <span class="about-corner corner-two">+</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+
+            <span class="mini-label">
+              THE PERSON BEHIND WANUHCoded
+            </span>
+
+            <h3>
+              Learning, creating,
+              <span class="gradient-text">and figuring things out.</span>
+            </h3>
+
+            <p>
+              I'm Mariella Arao, an Information Technology student with a growing interest in programming, web development, and digital design.
+            </p>
+
+            <p>
+              I enjoy discovering how technology works and exploring how ideas can become something useful, creative, and interactive.
+            </p>
+
+            <p>
+              This portfolio is my little space on the internet where I share what I'm learning, the projects I'm building, and the progress I make along the way.
+            </p>
+
+            <div class="about-facts">
+              <div class="fact">
+                <span>FOCUS</span>
+                <strong>Development &amp; Design</strong>
+              </div>
+
+              <div class="fact">
+                <span>STATUS</span>
+                <strong>Always Learning</strong>
+              </div>
+
+              <div class="fact">
+                <span>INTERESTS</span>
+                <strong>Creative Technology</strong>
+              </div>
+            </div>
+
+            <a
+              href="https://github.com/mariawana"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-link"
+            >
+              Explore my GitHub ↗
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="section-label">
+            <span>02 / MY TOOLKIT</span>
+          </div>
+
+          <h2>
+            Tools of the
+            <span class="gradient-text">creative process.</span>
+          </h2>
+
+          <p>
+            Technologies I'm learning, practicing, and using to bring ideas to life.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">⌘</div>
+            <span class="skill-number">01</span>
+            <h3>Programming</h3>
+            <p>
+              Understanding logic, solving problems, and building a foundation in software development.
+            </p>
+            <div class="skill-tags">
+              <span>C++</span>
+              <span>Java</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">◈</div>
+            <span class="skill-number">02</span>
+            <h3>Web Development</h3>
+            <p>
+              Creating responsive interfaces and learning how modern websites work.
+            </p>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>TypeScript</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">✳</div>
+            <span class="skill-number">03</span>
+            <h3>Creative Design</h3>
+            <p>
+              Exploring layouts, visual identity, and user-friendly digital experiences.
+            </p>
+            <div class="skill-tags">
+              <span>UI Design</span>
+              <span>UX Basics</span>
+              <span>Canva</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">⌁</div>
+            <span class="skill-number">04</span>
+            <h3>Development Tools</h3>
+            <p>
+              Using practical tools to write, organize, test, and improve my projects.
+            </p>
+            <div class="skill-tags">
+              <span>VS Code</span>
+              <span>GitHub</span>
+              <span>Code::Blocks</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="section-label">
+            <span>03 / SELECTED WORK</span>
+          </div>
+
+          <h2>
+            Things I've been
+            <span class="gradient-text">working on.</span>
+          </h2>
+
+          <p>
+            A collection of ideas, experiments, and projects in different stages of development.
+          </p>
+        </div>
+
+        <div class="projects-toolbar reveal">
+          <div class="project-filters" aria-label="Project filters">
+            <button type="button" class="filter active" data-filter="all" aria-pressed="true">
+              All
+            </button>
+
+            <button type="button" class="filter" data-filter="cpp" aria-pressed="false">
+              C++
+            </button>
+
+            <button type="button" class="filter" data-filter="web" aria-pressed="false">
+              Web
+            </button>
+
+            <button type="button" class="filter" data-filter="creative" aria-pressed="false">
+              Creative
+            </button>
+          </div>
+
+          <div class="project-counter">
+            <span id="projectCount">04</span>
+            <span>PROJECTS</span>
+          </div>
+        </div>
+
+        <div class="projects-grid upgraded-project-grid">
+
+          <!-- PROJECT 01 -->
+
+          <article class="project-card reveal" data-category="cpp">
+
+            <div class="project-preview preview-cpp">
+              <div class="preview-topbar">
+                <span>business-system.cpp</span>
+                <span>● ● ●</span>
+              </div>
+
+              <div class="cpp-preview-code">
+                <span>&gt; BUSINESS MANAGEMENT SYSTEM</span>
+                <span>--------------------------------</span>
+                <span>[1] Manage Inventory</span>
+                <span>[2] Sales Transactions</span>
+                <span>[3] Customer Records</span>
+                <span>[4] Reports</span>
+                <span class="preview-terminal-cursor">&gt; _</span>
+              </div>
+            </div>
+
+            <div class="project-info">
+
+              <div class="project-topline">
+                <span>01 / C++ DEVELOPMENT</span>
+                <span class="project-status">IN DEVELOPMENT</span>
+              </div>
+
+              <h3>Business Management System</h3>
+
+              <p>
+                A console-based management system concept for organizing products, inventory, and sales using object-oriented C++.
+              </p>
+
+              <div class="project-tags">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>File Handling</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button
+                  type="button"
+                  class="project-detail-button project-action"
+                  data-project="cpp"
+                >
+                  View details ↗
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+
+          <article class="project-card reveal" data-category="web creative">
+
+            <div class="project-preview preview-game">
+              <div class="game-preview">
+                <div class="game-preview-header">
+                  <span>MINI GAME</span>
+                  <span>HIGH SCORE: 0000</span>
+                </div>
+
+                <div class="game-preview-center">
+                  <span class="game-star">✦</span>
+                  <strong>READY?</strong>
+                  <span>PRESS START TO PLAY</span>
+                </div>
+
+                <div class="game-preview-footer">
+                  <span>◀ ▲ ▼ ▶</span>
+                  <span>LEVEL 01</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+
+              <div class="project-topline">
+                <span>02 / INTERACTIVE WEB</span>
+                <span class="project-status">PLANNED</span>
+              </div>
+
+              <h3>Interactive Mini Game</h3>
+
+              <p>
+                A browser-based mini game concept featuring interactive challenges, playful visuals, and JavaScript functionality.
+              </p>
+
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button
+                  type="button"
+                  class="project-detail-button project-action"
+                  data-project="game"
+                >
+                  View details ↗
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 03 -->
+
+          <article class="project-card reveal" data-category="web creative">
+
+            <div class="project-preview preview-store">
+              <div class="store-preview">
+                <div class="store-preview-top">
+                  <span>THE THRIFT EDIT.</span>
+                  <span>♡ &nbsp; ☰</span>
+                </div>
+
+                <div class="store-preview-content">
+                  <span>CURATED PRELOVED FINDS</span>
+                  <strong>Good style.<br>Second life.</strong>
+                  <span class="store-preview-pill">
+                    EXPLORE COLLECTION ↗
+                  </span>
+                </div>
+
+                <div class="store-preview-bottom">
+                  <span>PRELOVED</span>
+                  <span>RELOVED</span>
+                  <span>REIMAGINED</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-info">
+
+              <div class="project-topline">
+                <span>03 / E-COMMERCE</span>
+                <span class="project-status">PLANNED</span>
+              </div>
+
+              <h3>Online Thrift Store</h3>
+
+              <p>
+                An online thrift store concept featuring curated fashion pieces, a clean shopping interface, and checkout functionality.
+              </p>
+
+              <div class="project-tags">
+                <span>E-commerce</span>
+                <span>Web App</span>
+                <span>UI/UX</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button
+                  type="button"
+                  class="project-detail-button project-action"
+                  data-project="store"
+                >
+                  View details ↗
+                </button>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- PROJECT 04 -->
+
+          <article class="project-card reveal" data-category="web creative">
+
+            <div class="project-preview preview-talk">
+              <img
+                src="assets/talk-thrift.png"
+                alt="Screenshot of Talk Thrift online store"
+                class="talk-screenshot"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+
+              <div class="talk-fallback" style="display:none">
+                <span class="talk-fallback-label">ONLINE THRIFT SHOPPING</span>
+                <strong>Talk Thrift<span>.</span></strong>
+                <span>PRELOVED FINDS, REIMAGINED.</span>
+              </div>
+
+              <span class="live-preview-badge">
+                ● LIVE WEBSITE
+              </span>
+            </div>
+
+            <div class="project-info">
+
+              <div class="project-topline">
+                <span>04 / REACT + TYPESCRIPT</span>
+                <span class="project-status">IN DEVELOPMENT</span>
+              </div>
+
+              <h3>Talk Thrift</h3>
+
+              <p>
+                An online thrift shopping platform with product browsing, customer accounts, cart, and checkout features.
+              </p>
+
+              <div class="project-tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>E-commerce</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button
+                  type="button"
+                  class="project-detail-button project-action"
+                  data-project="talkthrift"
+                >
+                  View details ↗
+                </button>
+
+                <a
+                  href="https://talk-thrift-gwbq.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-live-link"
+                >
+                  Visit website ↗
+                </a>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+        <div class="projects-bottom reveal">
+          <p>
+            More ideas are always in progress.
+          </p>
+
+          <a
+            href="https://github.com/mariawana"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link"
+          >
+            More on GitHub ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div class="section-label">
+            <span>04 / GET IN TOUCH</span>
+          </div>
+
+          <h2>
+            Have something
+            <span class="gradient-text">in mind?</span>
+          </h2>
+
+          <p>
+            Whether it's an idea, a question, or just a hello, I'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-content reveal">
+
+            <span class="mini-label">
+              LET'S START A CONVERSATION
+            </span>
+
+            <h3>
+              Let's make something
+              <span class="gradient-text">interesting.</span>
+            </h3>
+
+            <p>
+              I'm always open to learning opportunities, creative ideas, and meaningful connections.
+            </p>
+
+            <div class="contact-links">
+
+              <a
+                href="mailto:araomariella08@gmail.com"
+                class="contact-link"
+              >
+                <span class="contact-link-icon">✉</span>
+
+                <span>
+                  <small>EMAIL ME</small>
+                  <strong>araomariella08@gmail.com</strong>
+                </span>
+
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://github.com/mariawana"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+              >
+                <span class="contact-link-icon">⌘</span>
+
+                <span>
+                  <small>FIND ME ON</small>
+                  <strong>GitHub / mariawana</strong>
+                </span>
+
+                <span>↗</span>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- FUNCTIONAL NETLIFY CONTACT FORM -->
+
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            name="portfolio-contact"
+            method="POST"
+            action="/"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+
+            <input
+              type="hidden"
+              name="form-name"
+              value="portfolio-contact"
+            >
+
+            <p hidden>
+              <label>
+                Do not fill this out:
+                <input type="text" name="bot-field">
+              </label>
+            </p>
+
+            <div class="form-heading">
+              <span>NEW MESSAGE</span>
+              <span>↗</span>
+            </div>
+
+            <label for="name">
+              01 / YOUR NAME
+            </label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="What should I call you?"
+              maxlength="80"
+              autocomplete="name"
+              required
+            >
+
+            <label for="email">
+              02 / YOUR EMAIL
+            </label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              maxlength="150"
+              autocomplete="email"
+              required
+            >
+
+            <label for="message">
+              03 / YOUR MESSAGE
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="2000"
+              placeholder="Tell me what's on your mind..."
+              required
+            ></textarea>
+
+            <button
+              type="submit"
+              class="btn primary send-button"
+            >
+              Send message <span>↗</span>
+            </button>
+
+            <p
+              class="form-hint"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            >
+              Your message will be sent directly through this website.
+            </p>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          wanuhcoded<span>.</span>
+        </a>
+
+        <p>
+          Made with curiosity, creativity, and code.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#home">Back to top ↑</a>
+          <a
+            href="https://github.com/mariawana"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+          <a href="mailto:araomariella08@gmail.com">
+            Email ↗
+          </a>
+        </div>
+
+        <span class="footer-copy">
+          © <span id="year">2026</span> wanuhcoded.
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS DIALOG -->
+
+  <dialog
+    class="project-dialog"
+    id="projectDialog"
+    aria-labelledby="dialogTitle"
+  >
+
+    <div class="dialog-header">
+      <span id="dialogCategory">
+        PROJECT DETAILS
+      </span>
+
+      <button
+        type="button"
+        id="closeDialog"
+        class="dialog-close"
+        aria-label="Close project details"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div class="dialog-body">
+
+      <h2 id="dialogTitle">
+        Project Title
+      </h2>
+
+      <p id="dialogDescription">
+        Project description.
+      </p>
+
+      <h3>Project Features</h3>
+
+      <ul id="dialogFeatures"></ul>
+
+      <div class="dialog-status">
+        <span>PROJECT STATUS</span>
+        <strong id="dialogStatus">IN DEVELOPMENT</strong>
+      </div>
+
+    </div>
+
+  </dialog>
+
+  <!-- QUICK NAVIGATION DIALOG -->
+
+  <dialog
+    class="command-dialog"
+    id="commandDialog"
+    aria-label="Quick navigation"
+  >
+
+    <div class="command-header">
+      <span>QUICK NAVIGATION</span>
+
+      <button
+        type="button"
+        id="closeCommand"
+        class="dialog-close"
+        aria-label="Close quick navigation"
+      >
+        ✕
+      </button>
+    </div>
+
+    <div class="command-search-wrap">
+      <span>⌕</span>
+
+      <input
+        type="search"
+        id="commandSearch"
+        placeholder="Where would you like to go?"
+        autocomplete="off"
+        aria-label="Search portfolio sections"
+      >
+    </div>
+
+    <div class="command-results" id="commandResults">
+
+      <button type="button" data-target="home">
+        <span>⌂</span>
+        Home
+        <span>↗</span>
+      </button>
+
+      <button type="button" data-target="about">
+        <span>◈</span>
+        About Me
+        <span>↗</span>
+      </button>
+
+      <button type="button" data-target="skills">
+        <span>⌘</span>
+        Skills
+        <span>↗</span>
+      </button>
+
+      <button type="button" data-target="projects">
+        <span>✦</span>
+        Projects
+        <span>↗</span>
+      </button>
+
+      <button type="button" data-target="contact">
+        <span>✉</span>
+        Contact
+        <span>↗</span>
+      </button>
+
+    </div>
+
+    <div class="command-footer">
+      <span>↑ ↓ TO NAVIGATE</span>
+      <span>ENTER TO SELECT</span>
+      <span>ESC TO CLOSE</span>
+    </div>
+
+  </dialog>
+
+</body>
+</html>
